@@ -1,0 +1,22 @@
+{
+  "name": "idurar-backend-tests",
+  "version": "1.0.0",
+  "description": "API tests for IDURAR ERP CRM Backend",
+  "scripts": {
+    "test": "jest --coverage --verbose",
+    "test:watch": "jest --watch",
+    "test:integration": "jest --testMatch='**/*.integration.test.js'"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3",
+    "@types/jest": "^29.5.11"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "testTimeout": 30000
+  }
+}
